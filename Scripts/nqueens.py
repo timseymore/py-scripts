@@ -18,10 +18,12 @@ def is_solution(perm):
 
 
 def find_solution(n):
+    valids = []
     for perm in it.permutations(range(n)):
         if is_solution(perm):
+            valids.append(perm)
             print(perm)
-            return
+    print(valids.__len__())
     
     
 find_solution(8)   
