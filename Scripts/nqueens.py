@@ -26,7 +26,7 @@ def find_solution(n):
     print(valids.__len__())
     
     
-find_solution(8)   
+# find_solution(8)   
      
 
 # Backtracking method
