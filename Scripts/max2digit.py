@@ -18,9 +18,13 @@ def build_num_lst(x, y):
 def sum_under_hundred(lst):
     ans_lst = []
     for i in lst:
-        for j in ans_lst:
-            if i + j != 100:
-                ans_lst.append(i)
+        if ans_lst == []:
+            ans_lst.append(i)
+        else:
+            for j in ans_lst:
+                if i + j != 100:
+                    print(i)
+                    ans_lst.append(i)
     return ans_lst
 
 # print(build_num_lst(10, 99))
