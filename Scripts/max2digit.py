@@ -24,6 +24,7 @@ def check_num(n: int, lst: list) ->  bool:
             return False
     return True
 
+
 def max2(lst: list, ans_lst: list) -> int:
     if lst == []:
         return len(ans_lst)
@@ -32,5 +33,4 @@ def max2(lst: list, ans_lst: list) -> int:
     return max2(lst[1::], ans_lst)
 
 
-# print(build_num_lst(10, 99))
 print(max2(build_num_lst(10, 99), []))
