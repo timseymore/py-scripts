@@ -16,7 +16,7 @@ def change(n):
     if n == 8: 
         return [3,5]
     if n == 9:
-        return [3,3,5]
+        return [3,3,3]
     if n == 10:
         return [5,5]
     
