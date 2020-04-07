@@ -3,7 +3,7 @@
 Change
 
 
-Changes any monetary amount greater than 8 using coins of value 3 or 5 only
+Changes any monetary amount greater than 24 using coins of value 7 or 5 only
 
 
 Created on Mon Apr  6 19:36:49 2020
@@ -12,14 +12,19 @@ Created on Mon Apr  6 19:36:49 2020
 """
 
 def change(n):
-    assert(n >= 8)
-    if n == 8: 
-        return [3,5]
-    if n == 9:
-        return [3,3,3]
-    if n == 10:
-        return [5,5]
+    assert(n >= 24)
+    if n == 24: 
+        return [5,5,7,7]
+    if n == 25: 
+        return [5,5,5,5,5]
+    if n == 26: 
+        return [5,7,7,7]
+    if n == 27: 
+        return [5,5,5,5,7]
+    if n == 28: 
+        return [7,7,7,7]
+
     
-    coins = change(n - 3)
-    coins.append(3)
+    coins = change(n - 5)
+    coins.append(5)
     return coins
