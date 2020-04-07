@@ -24,7 +24,6 @@ def change(n):
     if n == 28: 
         return [7,7,7,7]
 
-    
     coins = change(n - 5)
     coins.append(5)
     return coins
