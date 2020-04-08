@@ -13,5 +13,5 @@ def turns_to_solve(n):
     elif n == 2:
         return 3
     else:
-        return turns_to_solve(n-1) + 1
+        return (turns_to_solve(n-1) * 2) + 1
     
