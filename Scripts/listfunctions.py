@@ -59,15 +59,15 @@ def multiply (x,y):
 
 
 
-print(myfilter(ispositive, testlist))
-print(myfilter(isbelow2, testlist))
+# print(myfilter(ispositive, testlist))
+# print(myfilter(isbelow2, testlist))
 
-print(mymap(increment, testlist))
-print(mymap(negate, testlist))
+# print(mymap(increment, testlist))
+# print(mymap(negate, testlist))
 
-print(testlist[5:])
-print(fold(add, testlist[5:], 0))
-print(fold(multiply, testlist[5:], 1))
+# print(testlist[5:])
+# print(fold(add, testlist[5:], 0))
+# print(fold(multiply, testlist[5:], 1))
 
 
 
