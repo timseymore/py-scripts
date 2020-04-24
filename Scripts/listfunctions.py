@@ -25,7 +25,7 @@ def mymap (f, lst):
     return result
 
 
-def fold (f, lst, acc):
+def myfold (f, lst, acc):
     for i in lst:
         acc = f(i,acc)
     return acc
@@ -63,8 +63,8 @@ def multiply (x,y):
 # print(mymap(negate, testlist))
 
 # print(testlist[5:])
-# print(fold(add, testlist[5:], 0))
-# print(fold(multiply, testlist[5:], 1))
+# print(myfold(add, testlist[5:], 0))
+# print(myfold(multiply, testlist[5:], 1))
 
 
 
