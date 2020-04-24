@@ -4,7 +4,7 @@ n queens puzzle solution checker
 
 
 """
-
+import sys
 import itertools as it
 
 
@@ -26,9 +26,6 @@ def find_solution(n):
     print(valids.__len__())
     
     
-# find_solution(8)   
-     
-
 # Backtracking method
 
 def can_be_extended_to_solution(perm):
@@ -38,18 +35,21 @@ def can_be_extended_to_solution(perm):
             return False
     return True
 
+
 def extend(perm, n):
     if len(perm) == n:
         print(perm)
-        exit()
-
+        sys.exit()
     for k in range(n):
         if k not in perm:
             perm.append(k)
-
             if can_be_extended_to_solution(perm):
                 extend(perm, n)
-
             perm.pop()
-
-# extend(perm = [], n = 13)
+            
+            
+            
+# Test Code
+            
+# find_solution(8) 
+# extend([], 13)
