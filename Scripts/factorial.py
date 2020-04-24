@@ -7,7 +7,7 @@ Created on Mon Apr  6 18:49:51 2020
 @author: Tim
 """
 
-# Iterative version of factorial
+# Iterative version
 def fact0(n):
     assert(n > 0)
     result = 1
