@@ -33,4 +33,7 @@ def max2(lst: list, ans_lst: list) -> int:
     return max2(lst[1::], ans_lst)
 
 
-print(max2(build_num_lst(10, 99), []))
+
+# Test code 
+    
+# print(max2(build_num_lst(10, 99), []))
