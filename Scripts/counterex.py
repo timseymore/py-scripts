@@ -7,6 +7,9 @@ Created on Fri Apr 17 10:40:54 2020
 
 @author: Tim
 """
+
+import sys
+
     
 def is_prime(n):
     divisor = 2
@@ -14,7 +17,7 @@ def is_prime(n):
     while divisor*divisor <= n:   # while divisor <= sqrt(n)
         if n % divisor == 0:
             result = False
-            break
+            return
         divisor = divisor + 1
     return result
 
