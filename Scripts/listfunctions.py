@@ -36,11 +36,8 @@ def fold (f, lst, acc):
     
 testlist = [-4, -3, -2, -1, -0, 1, 2, 3, 4]
 
-def isbelowx (n, x):
-    return n < x
-
 def isbelow2 (n):
-    return isbelowx(n, 2)
+    return n < 2
     
 def ispositive (n):
     return n > 0
