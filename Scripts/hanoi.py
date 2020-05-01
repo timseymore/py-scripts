@@ -2,6 +2,9 @@
 """
 Hanoi Towers
 
+how many turns to solve a Hanoi towers puzzle with n discs
+
+
 Created on Wed Apr  8 16:54:52 2020
 
 @author: Tim
