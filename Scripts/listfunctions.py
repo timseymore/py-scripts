@@ -2,7 +2,8 @@
 """
 List functions
  
-filter, map, and fold
+filter, map, and fold implementations
+
 
 Created on Sat Apr 18 21:33:08 2020
 
@@ -32,7 +33,7 @@ def myfold (f, lst, acc):
 
 
 
-# Test code 
+# Test cases
     
 testlist = [-4, -3, -2, -1, -0, 1, 2, 3, 4]
 
@@ -50,15 +51,15 @@ add = lambda x, y: x + y
 multiply = lambda x, y: x * y
 
 
-print(myfilter(is_positive, testlist))
-print(myfilter(is_below_2, testlist))
+# print(myfilter(is_positive, testlist))
+# print(myfilter(is_below_2, testlist))
 
-print(mymap(increment, testlist))
-print(mymap(negate, testlist))
+# print(mymap(increment, testlist))
+# print(mymap(negate, testlist))
 
-print(testlist[5:])
-print(myfold(add, testlist[5:], 0))
-print(myfold(multiply, testlist[5:], 1))
+# print(testlist[5:])
+# print(myfold(add, testlist[5:], 0))
+# print(myfold(multiply, testlist[5:], 1))
 
 
 
