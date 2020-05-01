@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Factorial Functions
+Factorial
+
+two versions of factorial Functions
+
 
 Created on Mon Apr  6 18:49:51 2020
 
