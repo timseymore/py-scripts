@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 """
+Bisectionsqrt
 
-Using bisection search to approximate square root
+Use bisection search to approximate square root
+
 
 Created on Thu Feb  1 21:29:30 2018
 
