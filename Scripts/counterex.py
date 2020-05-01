@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """
+Counterex
+
 n2 + n + 41
 Somebody has a conjecture: 
     
@@ -14,13 +16,11 @@ Created on Fri Apr 17 10:40:54 2020
 @author: Tim
 """
 
-import sys
-
     
 def is_prime(n):
     divisor = 2
     result = True
-    while divisor*divisor <= n:   # while divisor <= sqrt(n)
+    while divisor*divisor <= n:   
         if n % divisor == 0:
             result = False
             return
