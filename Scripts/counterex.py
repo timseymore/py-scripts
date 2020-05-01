@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
 """
 n2 + n + 41
-Somebody has a conjecture: for every integer n > 1 the number n 2 + n + 41 is prime (is not a product of two smaller integers). Is it true? If not, find a counterexample.
+Somebody has a conjecture: 
+    
+ for every integer n > 1 the number n 2 + n + 41 is prime 
+ (is not a product of two smaller integers).
+ 
+Is it true? If not, find a counterexample.
+
 
 Created on Fri Apr 17 10:40:54 2020
 
