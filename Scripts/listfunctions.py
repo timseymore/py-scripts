@@ -36,35 +36,29 @@ def myfold (f, lst, acc):
     
 testlist = [-4, -3, -2, -1, -0, 1, 2, 3, 4]
 
-def isbelow2 (n):
-    return n < 2
+
+is_below_2 = lambda x: x < 2
     
-def ispositive (n):
-    return n > 0
+is_positive = lambda x: x > 0
 
-def increment (n):
-    return n + 1
+increment = lambda x: x + 1
 
-def negate (n):
-    return n * -1
+negate = lambda x: x * -1
 
-def add (x,y):
-    return x + y
+add = lambda x, y: x + y
 
-def multiply (x,y):
-    return x * y
+multiply = lambda x, y: x * y
 
 
+print(myfilter(is_positive, testlist))
+print(myfilter(is_below_2, testlist))
 
-# print(myfilter(ispositive, testlist))
-# print(myfilter(isbelow2, testlist))
+print(mymap(increment, testlist))
+print(mymap(negate, testlist))
 
-# print(mymap(increment, testlist))
-# print(mymap(negate, testlist))
-
-# print(testlist[5:])
-# print(myfold(add, testlist[5:], 0))
-# print(myfold(multiply, testlist[5:], 1))
+print(testlist[5:])
+print(myfold(add, testlist[5:], 0))
+print(myfold(multiply, testlist[5:], 1))
 
 
 
