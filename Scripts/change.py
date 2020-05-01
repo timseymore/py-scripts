@@ -2,8 +2,7 @@
 """
 Change
 
-
-Changes any monetary amount greater than 24 using coins of value 7 or 5 only
+Change any monetary amount greater than 24 using coins of value 7 or 5 only
 
 
 Created on Mon Apr  6 19:36:49 2020
