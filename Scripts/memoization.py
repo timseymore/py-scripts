@@ -14,7 +14,6 @@ def memo_map (fn, xs):
     def aux (ys, acc, mem):
         for y in ys: 
             if y in mem.keys():
-                print("using cache on " + str(y))
                 ans = mem[y]
             else:
                 ans = fn(y)
@@ -27,6 +26,6 @@ def memo_map (fn, xs):
     
 # Test Cases
     
-ts = [1, 2, 3, 3, 4, 2, 6, 8, 6, 8]
-result = memo_map(lambda x: x ** x, ts)
+zs = [1, 2, 3, 3, 4, 2, 6, 8, 6, 8]
+result = memo_map(lambda x: x ** x, zs)
 print(result)
