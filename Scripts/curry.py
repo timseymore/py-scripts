@@ -13,6 +13,6 @@ Created on Fri May  8 20:20:39 2020
 curried_fun = lambda fn, x: fn(x)
 
 
-# Test Uses
+# Test Cases
 result = curried_fun(len, "hi")
 print(result) # 2
