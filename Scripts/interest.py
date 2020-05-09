@@ -9,10 +9,12 @@ Created on Thu Apr 16 17:42:39 2020
 @author: Tim
 """
 
+
 # %matplotlib inline
 
 import matplotlib.pyplot as plt
 import numpy as np
+
 
 # You can play with the range of values for n and with the base 1.02, see what changes
 sample = 200
@@ -38,6 +40,10 @@ def PrintExample(starting_amount, earn_percent, day):
     print("If you start with $%d and earn %d%% each day, you will have more than $%.0f on day %d!" % 
           (starting_amount, earn_percent, HowMuchMoney(starting_amount, earn_percent, day), day))
 
+
+
+
 # Prints what will happen by day 74 if you start with $1000 and earn 10% every day
 # Feel free to play with the parameters
-PrintExample(1000, 10, 74)
+
+# PrintExample(1000, 10, 74)

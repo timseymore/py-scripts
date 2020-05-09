@@ -60,6 +60,3 @@ multiply = lambda x, y: x * y
 # print(testlist[5:])
 # print(myfold(add, testlist[5:], 0))
 # print(myfold(multiply, testlist[5:], 1))
-
-
-

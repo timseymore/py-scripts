@@ -10,6 +10,7 @@ Created on Mon Apr  6 19:36:49 2020
 @author: Tim
 """
 
+
 def change(n):
     assert(n >= 24)
     if n == 24: 

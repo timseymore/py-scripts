@@ -27,7 +27,11 @@ def is_prime(n):
         divisor = divisor + 1
     return result
 
-for i in range(1, 100):
-    result = i**2 + i + 41
-    if not is_prime(result):
-        print(str(i) + ": " + str(result))
+
+
+# Test Use
+    
+# for i in range(1, 100):
+#     result = i**2 + i + 41
+#     if not is_prime(result):
+#         print(str(i) + ": " + str(result))

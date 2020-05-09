@@ -20,15 +20,15 @@ def string_append (strings: list, suffix: str) -> list:
 
 
 
-# test cases
+# Test Cases
 
 suffix = ".jpg"        
 lst1 = ["tim", "michelle", "brooke"]
 lst2 = string_append(lst1, suffix)
 
-for el in lst1:
-    print(el)
+# for el in lst1:
+#     print(el)
     
-for el in lst2:
-    print(el)
+# for el in lst2:
+#     print(el)
      

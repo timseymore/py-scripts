@@ -10,6 +10,7 @@ Created on Fri May  8 20:13:29 2020
 @author: Tim
 """
 
+
 def memo_map (fn, xs):
     def aux (ys, acc, mem):
         for y in ys: 
@@ -28,4 +29,5 @@ def memo_map (fn, xs):
     
 zs = [1, 2, 3, 3, 4, 2, 6, 8, 6, 8]
 result = memo_map(lambda x: x ** x, zs)
-print(result)
+
+# print(result)

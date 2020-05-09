@@ -10,6 +10,7 @@ Created on Wed Apr  8 16:54:52 2020
 @author: Tim
 """
 
+
 def turns_to_solve(n):
     if n == 1:
         return 1

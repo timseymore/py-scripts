@@ -10,6 +10,7 @@ Created on Mon Apr  6 18:49:51 2020
 @author: Tim
 """
 
+
 # Iterative version
 def fact0(n):
     assert(n > 0)
