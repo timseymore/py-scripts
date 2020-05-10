@@ -28,6 +28,7 @@ def memo_map (fn, xs):
 # Test Cases
     
 zs = [1, 2, 3, 3, 4, 2, 6, 8, 6, 8]
-result = memo_map(lambda x: x ** x, zs)
+result1 = memo_map(lambda x: x ** x, zs)
+result2 = memo_map(lambda x: 2, zs)
 
-# print(result)
+# print(result1)
