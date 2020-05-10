@@ -26,9 +26,8 @@ suffix = ".jpg"
 lst1 = ["tim", "michelle", "brooke"]
 lst2 = string_append(lst1, suffix)
 
-# for el in lst1:
-#     print(el)
-    
-# for el in lst2:
-#     print(el)
-     
+# print the new list with suffix
+# print(lst2)
+  
+# here we can see that the original list has not been mutated     
+# print(lst1)
