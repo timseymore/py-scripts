@@ -11,8 +11,8 @@ Created on Fri May  8 20:13:29 2020
 """
 
 
-def memo_map (fn, xs):
-    def aux (ys, acc, mem):
+def memo_map (fn: callable, xs: list) -> list:
+    def aux (ys: list, acc: list, mem: dict) -> list:
         for y in ys: 
             if y in mem.keys():
                 ans = mem[y]
