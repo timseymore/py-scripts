@@ -12,13 +12,13 @@ Created on Fri May  8 20:13:29 2020
 
 
 def memo_map (fn: callable, xs: list) -> list:
-    def aux (acc: list, mem: dict) -> list:
+    def aux (acc: list, cache: dict) -> list:
         for x in xs: 
-            if x in mem.keys():
-                ans = mem[x]
+            if x in cache.keys():
+                ans = cache[x]
             else:
                 ans = fn(x)
-                mem[x] = ans
+                cache[x] = ans
             acc.append(ans)
         return acc
     return aux([], {})
