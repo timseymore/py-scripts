@@ -12,16 +12,16 @@ Created on Fri May  8 20:13:29 2020
 
 
 def memo_map (fn: callable, xs: list) -> list:
-    def aux (ys: list, acc: list, mem: dict) -> list:
-        for y in ys: 
-            if y in mem.keys():
-                ans = mem[y]
+    def aux (acc: list, mem: dict) -> list:
+        for x in xs: 
+            if x in mem.keys():
+                ans = mem[x]
             else:
-                ans = fn(y)
-                mem[y] = ans
+                ans = fn(x)
+                mem[x] = ans
             acc.append(ans)
         return acc
-    return aux(xs, [], {})
+    return aux([], {})
 
     
     
@@ -31,4 +31,4 @@ zs = [1, 2, 3, 3, 4, 2, 6, 8, 6, 8]
 result1 = memo_map(lambda x: x ** x, zs)
 result2 = memo_map(lambda x: 2, zs)
 
-# print(result1)
+# print(result2)
