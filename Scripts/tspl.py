@@ -11,6 +11,7 @@ Created on Sat May  9 20:24:51 2020
 @author: tim_s
 """
 
+import sys, os
 
 
 class Exp:
@@ -103,9 +104,18 @@ class Interpreter:
         self.run()
         
     def run(self):
-        inp: Exp = input('>>> ')
-        self.eval_exp(inp)
+        while True:
+            inp: Exp = input('>>> ')
+            if inp == 'quit':
+                sys.exit()
+            self.eval_exp(inp)
     
     def eval_exp(self, exp: Exp):
-        print("Not yet implemented")
+        print("Eval not yet implemented")
         
+        
+        
+        
+if __name__ == "__main__":
+    Interpreter()
+    
