@@ -33,7 +33,7 @@ class Neg(Exp):
     """ Negated expression """
     def __init__(self, exp: Exp):
         super().__init__()
-        self.num = num
+        self.exp = exp
   
       
 class Add(Exp):
