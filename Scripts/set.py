@@ -11,6 +11,9 @@ Created on Tue May 19 20:08:17 2020
 
 test_set = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 
+
+# returns a set of numbers in given range (inclusive)
+# that are divisible by either 2 or 3
 def set_mod_2_3(size):
     temp = {}
     index = 0
@@ -21,7 +24,3 @@ def set_mod_2_3(size):
     return temp
 
 set1000 = set_mod_2_3(1000)
-
-
-
-    
