@@ -52,7 +52,7 @@ N10 = Node("N10", [N8, N9])
 # This is poor style however, the function should be an inner method of Node.
 
 def num_paths(n: Node):
-    # We define an inner helper-function to recursively count.
+    # We define a local helper-function to recursively count the paths.
     # Calling num_paths will be simpler without the need
     # to pass an accumulator, this will help avoid errors  
     # by ensuring the accumulator is always called starting at 0
