@@ -54,8 +54,8 @@ N10 = Node("N10", [N8, N9])
 def num_paths(n: Node):
     # We define an inner helper-function to recursively count.
     # Calling num_paths will be simplier without the need
-    # to pass an accumulator, this will avoid errors by ensuring the 
-    # accumulator is always called starting at 0
+    # to pass an accumulator, this will help avoid errors  
+    # by ensuring the accumulator is always called starting at 0
     def aux(node, acc):
         if node.subs == []:
             return acc + 1
