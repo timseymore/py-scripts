@@ -58,9 +58,11 @@ def num_paths(n: Node):
     # by ensuring the accumulator is always called starting at 0
     def aux(node, acc):
         if node.subs == []:
+            # This is our base case: a node with no subs has one possible path
             return acc + 1
         else:
-            for sub in node.subs:
+            # Sum the number of paths to each sub and return the result
+            for sub in node.subs:                
                 acc += aux(sub, 0)
             return acc
         
