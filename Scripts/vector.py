@@ -36,4 +36,9 @@ V2 = Vector(2, 4)
 V3 = Vector(1, 2, 2)
 V4 = Vector(3, -1, 3)
 
+V5 = V1 + V2
+V6 = V3 + V4
+V7 = V1 + V3
 
+V8 = V1 * 2
+V9 = V7 * 5
