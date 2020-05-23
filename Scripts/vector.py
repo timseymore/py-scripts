@@ -11,6 +11,8 @@ Created on Thu May 21 16:04:45 2020
 @author: Tim
 """
 
+import matplotlib.pyplot as plt
+
 class Vector:
     def __init__(self, x, y, z=0):
         self.x = x
