@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 
-Vector
+Points and Vectors
 
-modeling and working with vectors
+modeling and working with points and vectors
 
 
 Created on Thu May 21 16:04:45 2020
