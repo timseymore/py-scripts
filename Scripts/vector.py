@@ -13,6 +13,18 @@ Created on Thu May 21 16:04:45 2020
 
 import matplotlib.pyplot as plt
 
+from math import sqrt
+
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        
+    def dist_to_origin(self):
+        return sqrt(self.x  * self.x + self.y * self.y)
+
+
 class Vector:
     def __init__(self, x, y, z=0):
         self.x = x
