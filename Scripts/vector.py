@@ -23,22 +23,28 @@ class Point:
         
     def dist_to_origin(self):
         return sqrt(self.x  * self.x + self.y * self.y)
+    
+    def plot(self, format='bo'):
+        plt.plot(self.x, self.y, format)
 
 
 class Vector:
-    def __init__(self, x, y, z=0):
+    def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.z = z
         
     def __add__(self, v):
-        return Vector(self.x + v.x, self.y + v.y, self.z + v.z)
+        return Vector(self.x + v.x, self.y + v.y)
     
     def __mul__(self, n):
-        return Vector(n*self.x, n*self.y, n*self.z)
+        return Vector(n*self.x, n*self.y)
     
     def __str__(self):
-        return "[" + str(self.x) + ", " + str(self.y) + ", " + str(self.z) + "]"
+        return "[" + str(self.x) + ", " + str(self.y) + "]"
+    
+    def plot(self, format='ro'):
+        plt.plot(self.x, self.y, format)
+
 
 
 
@@ -47,8 +53,8 @@ J_HAT = Vector(0, 1)
 
 V1 = Vector(-1, 2)
 V2 = Vector(2, 4)
-V3 = Vector(1, 2, 2)
-V4 = Vector(3, -1, 3)
+V3 = Vector(1, 2)
+V4 = Vector(3, -1)
 
 V5 = V1 + V2
 V6 = V3 + V4
