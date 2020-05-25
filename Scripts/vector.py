@@ -3,7 +3,7 @@
 
 Points and Vectors
 
-modeling and working with points and vectors
+modeling and plotting points and vectors
 
 
 Created on Thu May 21 16:04:45 2020
@@ -18,6 +18,7 @@ from math import sqrt
 
 
 class Plotable:
+    
     def __init__(self, x, y):
         self.x = x
         self.y = y 
