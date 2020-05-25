@@ -11,6 +11,7 @@ Created on Thu May 21 16:04:45 2020
 @author: Tim
 """
 
+import numpy as np
 import matplotlib.pyplot as plt
 
 from math import sqrt
@@ -63,3 +64,14 @@ V7 = V1 + V3
 
 V8 = V1 * 2
 V9 = V7 * 5
+
+
+
+# Example of Plotting Vectors to Consider
+####################################################
+
+# V = np.array([[1,1],[-2,2],[4,-7]])
+# origin = [0], [0] # origin point
+
+# plt.quiver(*origin, V[:,0], V[:,1], color=['r','b','g'], scale=21)
+# plt.show()
