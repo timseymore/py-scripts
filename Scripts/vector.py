@@ -16,28 +16,26 @@ import matplotlib.pyplot as plt
 from math import sqrt
 
 
-class Point:
+
+class Plotable:
     def __init__(self, x, y):
         self.x = x
-        self.y = y
-        
-    def dist_to_origin(self):
-        return sqrt(self.x  * self.x + self.y * self.y)
-    
+        self.y = y 
+
     def plot(self, format='bo'):
         plt.plot(self.x, self.y, format)
         
     def __str__(self):
         return "[" + str(self.x) + ", " + str(self.y) + "]"
-
-
-class Vector:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
     
-    def plot(self, format='ro'):
-        plt.plot(self.x, self.y, format)        
+
+class Point(Plotable):
+        
+    def dist_to_origin(self):
+        return sqrt(self.x  * self.x + self.y * self.y)
+
+
+class Vector(Plotable):   
         
     def __add__(self, v):
         return Vector(self.x + v.x, self.y + v.y)
@@ -45,8 +43,6 @@ class Vector:
     def __mul__(self, n):
         return Vector(n*self.x, n*self.y)
     
-    def __str__(self):
-        return "[" + str(self.x) + ", " + str(self.y) + "]"
 
 
 
