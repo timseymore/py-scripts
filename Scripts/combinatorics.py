@@ -53,3 +53,16 @@ for p in it.product("ab", repeat=4):
     print("".join(p))
 
 print(" 2^4 = 16 sequences")
+
+
+# Pascal's Triangle:
+# ------------------
+
+print("Pascal's Triangle: 7 choose 4")
+choose = dict()  # dct([n,k]) is equal to n choose k
+for n in range(8):
+    choose[n, 0] = 1
+    choose[n, n] = 1    
+    for k in range(1, n):
+        choose[n, k] = choose[n - 1, k - 1] + choose[n - 1, k]        
+print(choose[7,4])
