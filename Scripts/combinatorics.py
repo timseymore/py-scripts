@@ -60,7 +60,8 @@ print(" 2^4 = 16 sequences")
 
 print("Pascal's Triangle: 7 choose 4")
 choose = dict()  # dct([n,k]) is equal to n choose k
-for n in range(8):
+choose_range = 20
+for n in range(choose_range):
     choose[n, 0] = 1
     choose[n, n] = 1    
     for k in range(1, n):
