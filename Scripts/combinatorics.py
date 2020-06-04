@@ -58,15 +58,20 @@ print(" 2^6 = " + str(len(l)) + " total sequences")
 
 l2 = []
 count = 0
+scount = 0
 for bitstring in l:
     for bit in bitstring:
         if bit == '0':
             count += 1
+        
     if count == 3:
         l2.append(bitstring)
         print(bitstring)
-
-print("length: " + str(len(l2)))
+        scount += 1
+    count = 0
+    
+print(count)
+print("length: " + str(scount))
 
 
 
