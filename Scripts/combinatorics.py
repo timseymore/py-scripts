@@ -56,6 +56,9 @@ for p in it.product("01", repeat=6):
 
 print(" 2^6 = " + str(len(l)) + " total sequences")
 
+
+# number of bitstrings of length 6 with equal 0 and 1 
+
 l2 = []
 count = 0
 scount = 0
