@@ -48,11 +48,26 @@ print("Pairs: " + str(len(F)))
 # composed out of n symbols is n^k
 
 print("Tuples")
-print("'ab' : n = 2, k = 4")
-for p in it.product("ab", repeat=4):
+print("'01' : n = 2, k = 6")
+l = []
+for p in it.product("01", repeat=6):
     print("".join(p))
+    l.append(p)
 
-print(" 2^4 = 16 sequences")
+print(" 2^6 = " + str(len(l)) + " total sequences")
+
+l2 = []
+count = 0
+for bitstring in l:
+    for bit in bitstring:
+        if bit == '0':
+            count += 1
+    if count == 3:
+        l2.append(bitstring)
+        print(bitstring)
+
+print("length: " + str(len(l2)))
+
 
 
 # Pascal's Triangle:
