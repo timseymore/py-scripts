@@ -44,10 +44,11 @@ print("Pairs: " + str(len(F)))
 
 # Tuples:
 # -------
+
 # The number of sequences of length k
 # composed out of n symbols is n^k
 
-print("Tuples")
+print("Tuples:")
 print("'01' : n = 2, k = 6")
 l = []
 for p in it.product("01", repeat=6):
@@ -57,8 +58,9 @@ for p in it.product("01", repeat=6):
 print(" 2^6 = " + str(len(l)) + " total sequences")
 
 
-# number of bitstrings of length 6 with equal 0 and 1 
-
+# number of bitstrings of length 6 with equal 0 and 1
+ 
+print("bit-strings of length six with equal 1 and 0")
 l2 = []
 count = 0
 scount = 0
@@ -91,10 +93,11 @@ for n in range(choose_range):
 print(choose[7,4])
 
 
-# Salads
-# ------
+# Salads:
+# -------
 # how many combinations of three ingreidients 
 # can we use to make a four item salad?
+
 print("Salads with tomato, bell pepper, and/or lettuce")
 for c in it.combinations_with_replacement("TBL", 4):
     print("".join(c))
