@@ -90,3 +90,10 @@ for n in range(choose_range):
     for k in range(1, n):
         choose[n, k] = choose[n - 1, k - 1] + choose[n - 1, k]        
 print(choose[7,4])
+
+
+# Salads
+# how many combinations of three ingreidients can we use to make a four item salad?
+
+for c in it.combinations_with_replacement("TBL", 4):
+    print("".join(c))
