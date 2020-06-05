@@ -73,7 +73,6 @@ for bitstring in l:
         scount += 1
     count = 0
     
-print(count)
 print("length: " + str(scount))
 
 
@@ -93,7 +92,9 @@ print(choose[7,4])
 
 
 # Salads
-# how many combinations of three ingreidients can we use to make a four item salad?
-
+# ------
+# how many combinations of three ingreidients 
+# can we use to make a four item salad?
+print("Salads with tomato, bell pepper, and/or lettuce")
 for c in it.combinations_with_replacement("TBL", 4):
     print("".join(c))
