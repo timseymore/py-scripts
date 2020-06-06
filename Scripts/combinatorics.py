@@ -99,5 +99,21 @@ print(choose[7,4])
 # can we use to make a four item salad?
 
 print("Salads with tomato, bell pepper, and/or lettuce")
+
 for c in it.combinations_with_replacement("TBL", 4):
     print("".join(c))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
