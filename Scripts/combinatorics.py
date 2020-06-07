@@ -84,7 +84,7 @@ print("length: " + str(scount))
 
 print("Pascal's Triangle: 7 choose 4")
 choose = dict()  # dct([n,k]) is equal to n choose k
-choose_range = 20
+choose_range = 25
 for n in range(choose_range):
     choose[n, 0] = 1
     choose[n, n] = 1    
