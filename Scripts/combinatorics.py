@@ -104,12 +104,20 @@ for c in it.combinations_with_replacement("TBL", 4):
     print("".join(c))
 
 
-temp = []
-for d in it.product(range(10), repeat = 4):
-    if sum(d) == 10:
-        temp.append(d)
-        print(d)
-print(len(temp))
+# Numbers with Fixed Sum of Digits
+# --------------------------------
+# How many non-negative intgers are there bewtween 0 and 10000
+# such that the sum of the digits is equal to n?
+    
+def fixed_sum(n, k):
+    temp = []
+    for d in it.product(range(10), repeat = k):
+        if sum(d) == n:
+            temp.append(d)
+    return temp
+
+res_str = str(len(fixed_sum(10, 4)))
+print("4-digit numbers with sum of digits equal to 10: " + res_str)
 
 
 
