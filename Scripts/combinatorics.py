@@ -118,7 +118,6 @@ for c in it.combinations_with_replacement("TBL", 4):
 # such that the sum of the digits is equal to n?
     
     
-    
 def fixed_sum(n, k):
     temp = []
     for d in it.product(range(10), repeat = k):
