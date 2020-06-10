@@ -105,12 +105,11 @@ for c in it.combinations_with_replacement("TBL", 4):
 
 
 temp = []
-for i in range(10000):
-    for j in range(i, 10000):
-        if i + j == 10:
-            temp.append(i)
-            temp.append(j)
-print(temp)
+for d in it.product(range(10), repeat = 4):
+    if sum(d) == 10:
+        temp.append(d)
+        print(d)
+print(len(temp))
 
 
 
