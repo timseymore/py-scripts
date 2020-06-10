@@ -104,8 +104,13 @@ for c in it.combinations_with_replacement("TBL", 4):
     print("".join(c))
 
 
-
-
+temp = []
+for i in range(10000):
+    for j in range(i, 10000):
+        if i + j == 10:
+            temp.append(i)
+            temp.append(j)
+print(temp)
 
 
 
