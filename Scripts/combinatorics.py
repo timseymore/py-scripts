@@ -82,15 +82,23 @@ print("length: " + str(scount))
 # Pascal's Triangle:
 # ------------------
 
-print("Pascal's Triangle: 7 choose 4")
-choose = dict()  # dct([n,k]) is equal to n choose k
-choose_range = 50
-for n in range(choose_range):
-    choose[n, 0] = 1
-    choose[n, n] = 1    
-    for k in range(1, n):
-        choose[n, k] = choose[n - 1, k - 1] + choose[n - 1, k]        
-print(choose[7,4])
+
+def choose(nval, kval):
+    """ Requires nval >= kval
+    
+     build n choose k dict of results up to n val + 1 
+     choose[n, k] is equal to n choose k
+    """
+    assert(nval >= kval)
+    choose = dict()
+    for n in range(nval + 1):
+        choose[n, 0] = 1
+        choose[n, n] = 1    
+        for k in range(1, n):
+            choose[n, k] = choose[n - 1, k - 1] + choose[n - 1, k] 
+    return choose[nval, kval]
+
+print("Pascal's Triangle: 7 choose 4 = " + str(choose(7,4)))        
 
 
 # Salads:
@@ -108,6 +116,8 @@ for c in it.combinations_with_replacement("TBL", 4):
 # --------------------------------
 # How many non-negative intgers are there bewtween 0 and 10000
 # such that the sum of the digits is equal to n?
+    
+    
     
 def fixed_sum(n, k):
     temp = []
