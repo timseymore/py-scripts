@@ -26,8 +26,8 @@ class Exp:
 class Int(Exp):
     """ A constant int """    
     def __init__(self, i):
-        super().__init__()
-        self.i = i
+         super().__init__()
+         self.i = i
         
     def eval(self):
         return self
