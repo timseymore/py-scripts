@@ -30,7 +30,7 @@ class Int(Exp):
          self.i = i
         
     def eval(self):
-        return self
+        return self.i
     
     def __str__(self):
         return str(self.i)
@@ -65,7 +65,7 @@ class Add(Exp):
         self.e2 = e2
         
     def eval(self):
-        return Int(self.e1.eval().i + self.e2.eval().i)
+        return Int(self.e1.eval() + self.e2.eval())
     
     def __str__(self):
         return "(" + str(self.e1) + " + " + str(self.e2) + ")"
