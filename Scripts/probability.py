@@ -4,6 +4,7 @@ Created on Fri Jun 26 11:30:03 2020
 
 @author: Tim
 """
+
 import random
 import itertools
 
@@ -19,5 +20,5 @@ for i in range (10000):
         
 print("Heads: " + str(heads))
 print("Tails: " + str(tails))
-print("Probability of heads: " + str(abs(heads / tails)))
+print("Frequency of heads: " + str(abs(heads / 10000)))
 
