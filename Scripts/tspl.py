@@ -11,7 +11,6 @@ Created on Sat May  9 20:24:51 2020
 @author: tim_s
 """
 
-# import sys, os
 
 
 class Exp:
@@ -21,6 +20,16 @@ class Exp:
     """    
     def __init__(self):
         pass
+
+    def eval(self):
+        return None
+
+    def __str__(self):
+        return ""
+
+    def has_zero(self):
+        return False
+    
 
 
 class Int(Exp):
@@ -125,30 +134,13 @@ class Multiply(Exp):
 #         self.exp2 = exp2
         
         
-# class Nul(Exp):
-#     """ Used to represent a null value """    
-#     def __init__(self):
-#         super().__init__()
-        
+class Nul(Exp):
+    """ Used to represent a null value """    
+    def __init__(self):
+        super().__init__()
 
-# class Interpreter:
-#     """ TSPL interpreter """    
-#     def __init__(self):
-#         self.run()
-        
-#     def run(self):
-#         while True:
-#             inp: Exp = input('>>> ')
-#             if inp == 'quit':
-#                 sys.exit()
-#             self.eval_exp(inp)
-    
-#     def eval_exp(self, exp: Exp):
-#         print("Eval not yet implemented")
-        
-        
-        
-        
-# if __name__ == "__main__":
-#     Interpreter()
+    def __str__(self):
+        return "nul"
+
+
     
