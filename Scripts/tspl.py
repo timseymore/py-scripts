@@ -30,7 +30,15 @@ class Exp:
     def has_zero(self):
         return False
     
+    
+class Nul(Exp):
+    """ Used to represent a null value """    
+    def __init__(self):
+        super().__init__()
 
+    def __str__(self):
+        return "nul"
+    
 
 class Int(Exp):
     """ A constant int """    
@@ -134,13 +142,7 @@ class Multiply(Exp):
 #         self.exp2 = exp2
         
         
-class Nul(Exp):
-    """ Used to represent a null value """    
-    def __init__(self):
-        super().__init__()
 
-    def __str__(self):
-        return "nul"
 
 
     
