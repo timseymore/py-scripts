@@ -17,8 +17,6 @@ curried_add = lambda x: lambda y: x + y
 
 
 
-
-
 # Test Cases
 
 result1 = curried_dec(len, "hi")
