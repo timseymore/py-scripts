@@ -23,11 +23,11 @@ def string_append (strings: list, suffix: str) -> list:
 # Test Cases
 
 suffix = ".jpg"        
-lst1 = ["tim", "michelle", "brooke"]
+lst1 = ["tim", "star", "brooke"]
 lst2 = string_append(lst1, suffix)
 
 # print the new list with suffix
-# print(lst2)
+print(lst2)
   
 # here we can see that the original list has not been mutated     
-# print(lst1)
+print(lst1)

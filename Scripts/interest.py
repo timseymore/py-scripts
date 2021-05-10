@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 """
+interest.py
+
+
 You have $1000 on day 11, and every day you earn 10\%10% of what you already get,
 so that on day 22 you have $1000+10%⋅$1000=$1100, and on day 33 you have $1100+10%⋅$1100=$1210.
  On which day you will have more than $1000000 for the first time?
- Feel free to use the notebook about Bernoulli's inequality that we provided in this lesson.
+ 
 Created on Thu Apr 16 17:42:39 2020
 
 @author: Tim

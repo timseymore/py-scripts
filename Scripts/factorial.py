@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Factorial
+factorial.py
 
-two versions of factorial Functions
+Two versions of factorial Functions
 
 
 Created on Mon Apr  6 18:49:51 2020

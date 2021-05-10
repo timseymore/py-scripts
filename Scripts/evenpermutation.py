@@ -27,13 +27,10 @@ def is_even(p):
             count += 1
         # Break and do the final swap
         p[pos] = cursor
-        
-
     return count % 2 == 0
     
     
 
- 
 
 # Tests
       
